@@ -91,7 +91,7 @@ label.col-form-label{padding: 0px !important;}
 
   .profle_change_btns {text-align: right; width: 330px;}
   .profle_change_btns .btn{width:86%; height:28px; padding-top:0.200rem; float:right; padding-bottom:0.200rem; margin:8px 0px 6px;}
-  .btn{font-size:12px; }
+  .btn{font-size:12px;}
 
   .bank_cards{padding-top:10px;}
   .bank_cards span{padding:10px; background-color: #fff; border-radius: 6px; display: inline-block; margin-right: 5px;}
@@ -101,7 +101,7 @@ label.col-form-label{padding: 0px !important;}
 
   .family_list{max-height:280px; overflow-y: auto; padding-right: 15px !important;}
   .family_list::-webkit-scrollbar {
-    width: 10px;
+    width: 6px;
   }
 
   .user_form > .row{margin-top:8px; margin-bottom: 16px;}
@@ -128,14 +128,14 @@ label.col-form-label{padding: 0px !important;}
   .family_list::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
-  .family_list li{font-size: 13px; padding:8px 15px; margin-bottom: 10px; border-radius: 6px; font-weight: bold; color:#1a1c1e; background-color: #dee8ff;}
+  .family_list li{font-size: 13px; padding:7px 12px; margin-bottom: 10px; border-radius: 6px; font-weight: bold; color:#1a1c1e; background-color: #dee8ff;}
   .family_profile_pic{display: flex; align-items: center; }
   .family_profile_pic span{width:32px; height:32px; display: inline-block; overflow: hidden; border-radius: 100%; margin-right: 10px;}
   .family_profile_pic span img{width: 100%;}
   .family_list .btn{font-weight: bold; text-transform: uppercase;}
   .family_list .btn-secondary{background-color: #cad7f5; border: none; color:#1a1c1e;}
 
-  .invitation_actions{width: 104px;}
+  .invitation_actions{width: 104px; text-align: right;}
   .invitation_text{width: calc(96% - 32px); font-size: 12px;}
   .invitation_tabs{font-size: 11px;}
   .nav-tabs.invitation_tabs .nav-link{border: none; background-color: #dbdbdb; font-weight: bold; color:#545d68; border-radius:20px; padding:.35rem 1rem;}
