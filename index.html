@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Dev Test</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid d-flex align-items-center">
+          <div class="flex brand-left">  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+          </button>
+          <a class="navbar-brand " href="#">LOGO</a>
+          </div>
+          <div class="collapse navbar-collapse brand-middle" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Menu 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu 3</a>
+              </li>
+            </ul>            
+          </div>
+            
+        <div class="d-flex align-items-center navbar-right">
+            
+            <div class="dropdown notification_icon ms-3">
+                <a class="dropdown-toggle p-0 text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-bell"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle profile_pic_round p-0 ms-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="images/profile_pic_01.jpg" alt="">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+        </div>
+          
+          
+        </div>
+    </nav>
+
+    <section class="container-fluid mb-4">
+        <div class="d-flex justify-content-between my-account-titlebar">
+          <h3>My Account</h3>
+          <div class="alert alert-success" role="alert">
+            A simple success alert—check it out!
+          </div>
+          <button class="btn btn-dark">View Button</button>
+          
+          <div class="mobile_content_sec d-sm-none d-md-none">
+          <nav class="navbar ">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-three-dots"></i>
+              </button>
+            </div>
+          </nav>
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+               content comes here
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <ul class="nav nav-tabs" id="myTab1" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home1" type="button" role="tab" aria-controls="home" aria-selected="true">Profile</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile1" type="button" role="tab" aria-controls="profile" aria-selected="false">Wallet</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact1" type="button" role="tab" aria-controls="contact" aria-selected="false">Activities</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="invitation-tab" data-bs-toggle="tab" data-bs-target="#invitations" type="button" role="tab" aria-controls="contact" aria-selected="false">Invitations</button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent1">
+          <div class="tab-pane fade show active" id="home1" role="tabpanel" aria-labelledby="home-tab"></div>
+          <div class="tab-pane fade" id="profile1" role="tabpanel" aria-labelledby="profile-tab"></div>
+          <div class="tab-pane fade" id="contact1" role="tabpanel" aria-labelledby="contact-tab"></div>
+          <div class="tab-pane fade" id="invitations" role="tabpanel" aria-labelledby="contact-tab"></div>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-item item1" id="item1">
+              <div class="d-flex">
+              <div class="user_details d-flex align-items-center ps-0">
+                <div class="user_profile_pic">
+                  <img src="images/profile_pic_01.jpg" alt="" />
+                </div>
+                <div>
+                  <h5>Jhon Smith</h5>
+                  <small><i class="bi bi-geo-alt-fill"></i> Main St. Farmington, CA 123</small>
+                </div>
+              </div>
+              <div class="user_details_form">
+                <form class="user_form">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-4 col-sm-6 pe-lg-2 fname">
+                      <div class="row align-items-center">
+                        <div class="col-lg-4 pe-lg-0">
+                          <label for="firstname" class="col-form-label">First Name:</label>
+                        </div>
+                        <div class="col-lg-8 ps-lg-0">
+                          <input type="text" id="firstname" class="form-control" value="John">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-4 pe-lg-2 lname">
+                      <div class="row align-items-center">
+                        <div class="col-lg-4 pe-lg-0">
+                          <label for="lastname" class="col-form-label">Last Name:</label>
+                        </div>
+                        <div class="col-lg-8 ps-lg-0">
+                          <input type="text" id="lastname" class="form-control" value="Smith">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-4 pe-lg-2 gyear">
+                      <div class="row align-items-center">
+                        <div class="col-lg-4 pe-lg-0">
+                          <label for="graduationyear" class="col-form-label">Graduation Year:</label>
+                        </div>
+                        <div class="col-lg-8 ps-lg-0">
+                          <input type="text" id="graduationyear" class="form-control" value="1988">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 pe-lg-2 phone">
+                      <div class="row align-items-center">
+                        <div class="col-lg-4 pe-lg-0">
+                          <label for="phone" class="col-form-label">Phone:</label>
+                        </div>
+                        <div class="col-lg-8 ps-lg-0">
+                          <input type="text" id="phone" class="form-control" value="+1 (324) 234-2342">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-4 pe-lg-2 email">
+                      <div class="row align-items-center">
+                        <div class="col-lg-4 pe-lg-0">
+                          <label for="email" class="col-form-label">Email:</label>
+                        </div>
+                        <div class="col-lg-8 ps-lg-0">
+                          <input type="email" id="email" class="form-control" value="johnsmith@yahoo.com" disabled>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 pe-lg-2 dateofbirth">
+                      <div class="row align-items-center">
+                        <div class="col-lg-4 pe-lg-0">
+                          <label for="graduationyear" class="col-form-label">Date of Birth:</label>
+                        </div>
+                        <div class="col-lg-8 ps-lg-0">
+                          <input type="text" id="graduationyear" class="form-control" value="1988" disabled>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>           
+                </form>
+              </div>
+
+              <div class="profle_change_btns">
+                <button class="btn btn-success d-none d-sm-block">Save Changes</button>
+                <button class="btn btn-dark d-none d-sm-block" >Change Password</button>
+                <button class="btn btn-danger d-none d-sm-block">Leave Family</button>
+                <button class="btn btn-dark d-sm-none">Edit Profile</button>
+              </div>
+              </div>
+            </div>
+            <div class="grid-item item2" id="item2">
+              <div class="d-flex add_new_user justify-content-between align-items-start">
+                  <h6>Family</h6>
+                  <div class="d-inline-flex">
+                    <i class="bi bi-search"></i>
+                    <button class="btn btn-sm btn-success">Add New</button>
+                  </div>
+              </div>
+              <div class="py-0">
+                <ul class="family_list p-0 m-0">
+                  <li class="d-flex bg-warning justify-content-between align-items-center">
+                    <div class="family_profile_pic">
+                      <span><img src="images/profile_pic_01.jpg" alt="" /></span>
+                      John Smith
+                    </div>
+                    <div>
+                      <button class="btn btn-sm btn btn-light">Admin</button>
+                      <button class="btn btn-sm btn btn-light"><i class="bi bi-people-fill"></i></button>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="family_profile_pic">
+                      <span><img src="images/profile_pic_01.jpg" alt="" /></span>
+                      John Smith
+                    </div>
+                    <div>
+                      <button class="btn btn-sm btn btn-secondary">Member</button>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="family_profile_pic">
+                      <span><img src="images/profile_pic_01.jpg" alt="" /></span>
+                      John Smith
+                    </div>
+                    <div>
+                      <button class="btn btn-sm btn btn-secondary">Member</button>
+
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="family_profile_pic">
+                      <span><img src="images/profile_pic_01.jpg" alt="" /></span>
+                      John Smith
+                    </div>
+                    <div>
+                      <button class="btn btn-sm btn btn-secondary">Member</button>
+
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="family_profile_pic">
+                      <span><img src="images/profile_pic_01.jpg" alt="" /></span>
+                      John Smith
+                    </div>
+                    <div>
+                      <button class="btn btn-sm btn btn-secondary">Member</button>
+
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="family_profile_pic">
+                      <span><img src="images/profile_pic_01.jpg" alt="" /></span>
+                      John Smith
+                    </div>
+                    <div>
+                      <button class="btn btn-sm btn btn-secondary">Member</button>
+
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="family_profile_pic">
+                      <span><img src="images/profile_pic_01.jpg" alt="" /></span>
+                      John Smith
+                    </div>
+                    <div>
+                      <button class="btn btn-sm btn btn-secondary">Member</button>
+
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="family_profile_pic">
+                      <span><img src="images/profile_pic_01.jpg" alt="" /></span>
+                      John Smith
+                    </div>
+                    <div>
+                      <button class="btn btn-sm btn btn-secondary">Member</button>
+
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="family_profile_pic">
+                      <span><img src="images/profile_pic_01.jpg" alt="" /></span>
+                      John Smith
+                    </div>
+                    <div>
+                      <button class="btn btn-sm btn btn-secondary">Member</button>
+
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="grid-item item3" id="item3">
+              <div>
+                <h6>Bank Account</h6>
+                <div class="bank_cards">
+                  <span><img src="images/card-details.jpg" alt="" /></span>
+                  <span><img src="images/card-details.jpg" alt="" /></span>
+                </div>
+              </div>
+            </div>  
+            <div class="grid-item item4 billing_address">
+              <div>
+                <h6 >Billing Address</h6>
+                <form>
+                  <div class="form-check my-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Same as Home Address
+                    </label>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">First Name:</label>
+                        <input type="text" class="form-control" value="John" id="exampleFormControlInput1" placeholder="John">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Last Name:</label>
+                        <input type="text" class="form-control" value="Smith" id="exampleFormControlInput1" placeholder="John">
+                      </div>  
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Address Line 1:</label>
+                        <input type="text" class="form-control" value="123 Freed Line" id="exampleFormControlInput1" placeholder="John">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Address Line 2:</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Address Line 2">
+                      </div>  
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Country:</label>
+                        <input type="text" class="form-control" value="US" id="exampleFormControlInput1" placeholder="John" disabled>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 ">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">State/Provience/Region:</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John">
+                      </div>  
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">City:</label>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Select City</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>  
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Zip Code:</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John">
+                      </div>  
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <button class="btn btn-dark">Edit Details</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="grid-item item5" id="item5">
+              <div class="d-flex add_new_user justify-content-between align-items-start">
+                <h6>Activities</h6>
+                <div class="d-inline-flex">
+                  <button class="btn btn-sm btn-success">View All</button>
+                </div>
+              </div>
+              <div class="activities_lists py-0">
+                <ul class="list-group list-group-flush py-0">
+                  <li class="list-group-item">
+                    <span class="al_user_icon">
+                      <i class="bi bi-people-fill"></i>
+                    </span>
+                    <p>
+                    <span class="text-warning">Leslie Alexander</span> updated her Account Type
+                    <small>5 October 11:46 AM</small>
+                    </p>
+                  </li>
+                  <li class="list-group-item">
+                    <span class="al_user_icon">
+                      <i class="bi bi-people-fill"></i>
+                    </span>
+                    <p>
+                    <span class="text-warning">Leslie Alexander</span> updated her Account Type
+                    <small>5 October 11:46 AM</small>
+                    </p>
+                  </li>
+                  <li class="list-group-item">
+                    <span class="al_user_icon">
+                      <i class="bi bi-people-fill"></i>
+                    </span>
+                    <p>
+                    <span class="text-warning">Leslie Alexander</span> updated her Account Type
+                    <small>5 October 11:46 AM</small>
+                    </p>
+                  </li>
+                  <li class="list-group-item">
+                    <span class="al_user_icon">
+                      <i class="bi bi-people-fill"></i>
+                    </span>
+                    <p>
+                    <span class="text-warning">Leslie Alexander</span> updated her Account Type
+                    <small>5 October 11:46 AM</small>
+                    </p>
+                  </li>
+                  <li class="list-group-item">
+                    <span class="al_user_icon">
+                      <i class="bi bi-people-fill"></i>
+                    </span>
+                    <p>
+                    <span class="text-warning">Leslie Alexander</span> updated her Account Type
+                    <small>5 October 11:46 AM</small>
+                    </p>
+                  </li>
+                  <li class="list-group-item">
+                    <span class="al_user_icon">
+                      <i class="bi bi-people-fill"></i>
+                    </span>
+                    <p>
+                    <span class="text-warning">Leslie Alexander</span> updated her Account Type
+                    <small>5 October 11:46 AM</small>
+                    </p>
+                  </li>
+                  <li class="list-group-item">
+                    <span class="al_user_icon">
+                      <i class="bi bi-people-fill"></i>
+                    </span>
+                    <p>
+                    <span class="text-warning">Leslie Alexander</span> updated her Account Type
+                    <small>5 October 11:46 AM</small>
+                    </p>
+                  </li>
+                  <li class="list-group-item">
+                    <span class="al_user_icon">
+                      <i class="bi bi-people-fill"></i>
+                    </span>
+                    <p>
+                    <span class="text-warning">Leslie Alexander</span> updated her Account Type
+                    <small>5 October 11:46 AM</small>
+                    </p>
+                  </li>
+                  <li class="list-group-item">
+                    <span class="al_user_icon">
+                      <i class="bi bi-people-fill"></i>
+                    </span>
+                    <p>
+                    <span class="text-warning">Leslie Alexander</span> updated her Account Type
+                    <small>5 October 11:46 AM</small>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="grid-item item6" id="item6">
+              
+              <div class="d-flex add_new_user justify-content-between align-items-start">
+                <h6>Invitations</h6>
+                <div class="d-inline-flex">
+                  <ul class="nav nav-tabs invitation_tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Sent</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Recieved</button>
+                    </li>
+
+                  </ul>
+                </div>
+            </div>
+            <div class="py-0">
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <div class="alert alert-danger" role="alert">
+                    <h4 class="m-0 p-0">Sent Items comes here...</h4>
+                  </div>
+                  
+                </div>
+                <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <ul class="family_list invitation_list p-0 m-0">
+                    <li class="d-flex justify-content-between align-items-center">
+                      <div class="family_profile_pic">
+                        <span><img src="images/profile_pic_01.jpg" alt="" /></span>
+                        <div class="invitation_text"><small class="text-warning">John Smith</small> have invited you to become his family member.</div>
+                      </div>
+                      <div class="invitation_actions">
+                        <button class="btn btn-sm btn btn-success"><i class="bi bi-check2"></i></button>
+                        <button class="btn btn-sm btn btn-danger"><i class="bi bi-x-lg"></i></button>
+                      </div>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center">
+                      <div class="family_profile_pic">
+                        <span><img src="images/profile_pic_01.jpg" alt="" /></span>
+                        <div class="invitation_text"><small class="text-warning">John Smith</small> have invited you to become his family member.</div>
+                      </div>
+                      <div class="invitation_actions">
+                        <button class="btn btn-sm btn btn-success"><i class="bi bi-check2"></i></button>
+                        <button class="btn btn-sm btn btn-danger"><i class="bi bi-x-lg"></i></button>
+                      </div>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center">
+                      <div class="family_profile_pic">
+                        <span><img src="images/profile_pic_01.jpg" alt="" /></span>
+                        <div class="invitation_text"><small class="text-warning">John Smith</small> have invited you to become his family member.</div>
+                      </div>
+                      <div class="invitation_actions">
+                        <button class="btn btn-sm btn btn-success"><i class="bi bi-check2"></i></button>
+                        <button class="btn btn-sm btn btn-danger"><i class="bi bi-x-lg"></i></button>
+                      </div>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center">
+                      <div class="family_profile_pic">
+                        <span><img src="images/profile_pic_01.jpg" alt="" /></span>
+                        <div class="invitation_text"><small class="text-warning">John Smith</small> have invited you to become his family member.</div>
+                      </div>
+                      <div class="invitation_actions">
+                        <button class="btn btn-sm btn btn-success"><i class="bi bi-check2"></i></button>
+                        <button class="btn btn-sm btn btn-danger"><i class="bi bi-x-lg"></i></button>
+                      </div>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center">
+                      <div class="family_profile_pic">
+                        <span><img src="images/profile_pic_01.jpg" alt="" /></span>
+                        <div class="invitation_text"><small class="text-warning">John Smith</small> have invited you to become his family member.</div>
+                      </div>
+                      <div class="invitation_actions">
+                        <button class="btn btn-sm btn btn-success"><i class="bi bi-check2"></i></button>
+                        <button class="btn btn-sm btn btn-danger"><i class="bi bi-x-lg"></i></button>
+                      </div>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center">
+                      <div class="family_profile_pic">
+                        <span><img src="images/profile_pic_01.jpg" alt="" /></span>
+                        <div class="invitation_text"><small class="text-warning">John Smith</small> have invited you to become his family member.</div>
+                      </div>
+                      <div class="invitation_actions">
+                        <button class="btn btn-sm btn btn-success"><i class="bi bi-check2"></i></button>
+                        <button class="btn btn-sm btn btn-danger"><i class="bi bi-x-lg"></i></button>
+                      </div>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center">
+                      <div class="family_profile_pic">
+                        <span><img src="images/profile_pic_01.jpg" alt="" /></span>
+                        <div class="invitation_text"><small class="text-warning">John Smith</small> have invited you to become his family member.</div>
+                      </div>
+                      <div class="invitation_actions">
+                        <button class="btn btn-sm btn btn-success"><i class="bi bi-check2"></i></button>
+                        <button class="btn btn-sm btn btn-danger"><i class="bi bi-x-lg"></i></button>
+                      </div>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center">
+                      <div class="family_profile_pic">
+                        <span><img src="images/profile_pic_01.jpg" alt="" /></span>
+                        <div class="invitation_text"><small class="text-warning">John Smith</small> have invited you to become his family member.</div>
+                      </div>
+                      <div class="invitation_actions">
+                        <button class="btn btn-sm btn btn-success"><i class="bi bi-check2"></i></button>
+                        <button class="btn btn-sm btn btn-danger"><i class="bi bi-x-lg"></i></button>
+                      </div>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center">
+                      <div class="family_profile_pic">
+                        <span><img src="images/profile_pic_01.jpg" alt="" /></span>
+                        <div class="invitation_text"><small class="text-warning">John Smith</small> have invited you to become his family member.</div>
+                      </div>
+                      <div class="invitation_actions">
+                        <button class="btn btn-sm btn btn-success"><i class="bi bi-check2"></i></button>
+                        <button class="btn btn-sm btn btn-danger"><i class="bi bi-x-lg"></i></button>
+                      </div>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center">
+                      <div class="family_profile_pic">
+                        <span><img src="images/profile_pic_01.jpg" alt="" /></span>
+                        <div class="invitation_text"><small class="text-warning">John Smith</small> have invited you to become his family member.</div>
+                      </div>
+                      <div class="invitation_actions">
+                        <button class="btn btn-sm btn btn-success"><i class="bi bi-check2"></i></button>
+                        <button class="btn btn-sm btn btn-danger"><i class="bi bi-x-lg"></i></button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+    </section>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener("resize", resetMenu);
+        function resetMenu(){
+          if(window.innerWidth >= 767){location.reload; }
+          if(window.innerWidth <= 767){ 
+            location.reload;
+            const item1 = document.getElementById('item1');
+            const item2 = document.getElementById('item2');
+            const item3 = document.getElementById('item3');
+            const item5 = document.getElementById('item5');
+            const item6 = document.getElementById('item6')
+
+            document.getElementById("home1").appendChild(item1);
+            document.getElementById("home1").appendChild(item2);
+            document.getElementById("profile1").appendChild(item3);
+            document.getElementById("contact1").appendChild(item5);
+            document.getElementById("invitations").appendChild(item6);
+            
+          }
+        }
+        resetMenu()
+          
+      
+      
+    </script>
+</body>
+</html>
