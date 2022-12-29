@@ -90,8 +90,8 @@ label.col-form-label{padding: 0px !important;}
   .form-control, .form-select{border:solid 1px #dcdcdc; padding: .290rem .70rem; font-size: 12px; color:#5d5d5d; font-weight: bold; font-size: 11px;}
 
   .profle_change_btns {text-align: right; width: 330px;}
-  .profle_change_btns .btn{width:86%; height:28px; padding-top:0.200rem; padding-bottom:0.200rem; margin:8px 0px;}
-  .btn{font-size:12px;}
+  .profle_change_btns .btn{width:86%; height:28px; padding-top:0.200rem; padding-bottom:0.200rem; margin:8px 0px 6px;}
+  .btn{font-size:12px; float:right;}
 
   .bank_cards{padding-top:10px;}
   .bank_cards span{padding:10px; background-color: #fff; border-radius: 6px; display: inline-block; margin-right: 5px;}
