@@ -6,6 +6,8 @@ body{font-size: 12px;}
 .profile_pic_round{width: 32px; height: 32px; overflow: hidden; border-radius: 100%;}
 .profile_pic_round img{max-width: 100%;}
 
+.navbar.bg-dark .navbar-nav .nav-item{margin:0px 30px;}
+
 .notification_icon{height: 32px;}
 .notification_icon a{margin-top:4px;}
 .notification_icon a:after{display: none;}
@@ -17,6 +19,14 @@ body{font-size: 12px;}
 
 label.col-form-label{padding: 0px !important;}
 
+
+.profile_dropdown{position: relative;}
+.profile_dropdown .dropdown-menu{border:none; border-radius: 0px; background-color:#232e3e !important; padding:20px; width:300px;}
+.profile_dropdown .dropdown-menu .dropdown-item{color:#ffffff;}
+
+.profile_dropdown .dropdown-menu .user_details{margin-bottom: 30px;}
+.profile_dropdown .dropdown-menu .user_profile_pic{width: 60px; height: 60px;}
+.profile_dropdown .dropdown-menu .user_details h5{color:#fff;}
 
 .btn.btn-dark{background-color: #232e3e !important; border: none !important; }
 .btn.btn-danger{background-color:#ff3a3a; border: none !important;}
@@ -103,6 +113,12 @@ label.col-form-label{padding: 0px !important;}
   .family_list::-webkit-scrollbar {
     width: 6px;
   }
+  #collapseExample{position: absolute;
+    right: 0px;
+    top: 40px;
+    z-index: 999;
+    width: 300px;}
+  #collapseExample .user_details{width: auto; padding-right: 0px;}
 
   .user_form > .row{margin-top:8px; margin-bottom: 16px;}
   .user_form > .row > div{margin-bottom: 15px;}
@@ -162,6 +178,34 @@ label.col-form-label{padding: 0px !important;}
   .billing_address .form-check label{padding-top:3px; color:#565e6b; font-weight: bold; font-size: 12px;}
 
   #myTab1{display: none;}
+
+  #collapseExample{position: absolute; right: 0px; top:40px; z-index: 999; }
+  #collapseExample .card.card-body{background-color: rgb(35, 46, 62) !important;}
+  #collapseExample .user_profile_pic{width: 60px; height: 60px;}
+  #collapseExample .user_details h5{color:#fff;}
+  #collapseExample .sidebar{background-color: transparent; margin-top:20px; margin-bottom: 0px !important; padding-bottom:0px !important;}
+  #collapseExample .card.card-body{border:none; border-radius: 0px;}
+  #collapseExample .card.card-body ul{padding:0px;}
+  #collapseExample ul{list-style: none;}
+  #collapseExample .user_details small{color:#fff;}
+
+  #navbarTogglerDemo03 .dropdown-menu.show{display: none;}
+  #navbarTogglerDemo03 .dropdown-toggle::after{display: none;}
+
+  .navbar-dark .navbar-nav .nav-link .bi{display: none;}
+
+  #collapseExample .sidebar .nav li a{font-size: 16px; color:#fff;}
+  #collapseExample .sidebar .submenu{padding-left: 16px !important;}
+
+
+  #collapseExample .sidebar .submenu{border-left: solid 1px #ffc107 !important;
+    border-radius: 0px; position: relative; margin-left:18px;}
+    #collapseExample .sidebar .submenu::after{position: absolute; content:''; width:1px; height:26px;
+    left:-1px; bottom:-13px; background-color:#232e3e;}  
+  #collapseExample .sidebar .submenu li{position: relative;}  
+  #collapseExample .sidebar .submenu li:before{position: absolute;
+    content: ''; width: 12px; height: 1px; top: 16px; background-color: #ffc107; left:-16px;}
+  #collapseExample .sidebar .submenu li a.nav-link{padding-left: 5px; padding-bottom: 2px; padding-top:4px;} 
 
 
 @media only screen and (max-width: 991px) and (min-width: 300px)  {
@@ -224,6 +268,46 @@ label.col-form-label{padding: 0px !important;}
 
  .profle_change_btns{display: flex; text-align: left; width: 100%;}
  .profle_change_btns .btn{width: auto; margin-right:5px;}
+
+ .navbar.bg-dark .navbar-nav .nav-item{margin:0px;}
+
+ #navbarTogglerDemo03 .dropdown-menu.show{display: block; background-color: transparent; border:none}
+ #navbarTogglerDemo03 .dropdown-toggle::after{display: none;}
+
+ .submenu_profile{padding-top:40px;}
+ .submenu_profile .user_profile_pic{width: 60px; height: 60px;}
+ .submenu_profile .user_details h5{color:#fff;}
+ .submenu_profile .user_details small{color:#fff;}
+
+ #navbarTogglerDemo03{position: relative; top: -32px; z-index: 999; background-color: #232e3e !important;}
+ #navbarTogglerDemo03 > .navbar-nav{padding-left: 20px;}
+ #navbarTogglerDemo03 .nav-link{font-size: 16px; font-weight: 600;}
+ #navbarTogglerDemo03 .nav-link.dropdown-toggle.show{color:#ffc107;}
+ #navbarTogglerDemo03 .dropdown .dropdown-menu{border-left: solid 1px #ffc107 !important;  border-radius: 0px; position: relative;}
+ #navbarTogglerDemo03 .dropdown .dropdown-menu:after{position: absolute;
+  content: '';
+  width: 1px;
+  height: 26px;
+  left: -1px;
+  bottom: -3px;
+  background-color: #232e3e;}
+ #navbarTogglerDemo03 .dropdown .dropdown-menu li{position: relative;}
+ #navbarTogglerDemo03 .dropdown .dropdown-menu li:before{position: absolute; content:''; width:12px; height: 1px; top:16px; background-color:#ffc107;}
+ #navbarTogglerDemo03 .dropdown-menu li a{color:#fff;}
+
+ .navbar-dark .navbar-brand {
+  color: #fff;
+  position: relative;
+  z-index: 9999;
+}
+
+#navbarTogglerDemo03 .navbar-toggler{color:#fff;}
+.navbar-dark .navbar-nav .nav-link .bi{display: inline-block;}
+
+.profile_dropdown .dropdown-toggle::after{display: none;}
+ 
+
+
 
 }
 
