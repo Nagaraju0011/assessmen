@@ -19,16 +19,41 @@
           <a class="navbar-brand " href="#">LOGO</a>
           </div>
           <div class="collapse navbar-collapse brand-middle" id="navbarTogglerDemo03">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Menu 1</a>
+            <div class="d-flex justify-content-end mb-2">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="bi bi-x-square-fill"></i>
+            </button>
+          </div>
+            <ul class="navbar-nav ms-lg-4 mb-2 mb-lg-0">
+              <li class="d-block d-lg-none submenu_profile">
+                <div class="user_details d-flex align-items-center ps-0">
+                  <div class="user_profile_pic">                        
+                    <img src="images/profile_pic_01.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h5>Jhon Smith</h5>
+                    <small><i class="bi bi-geo-alt-fill"></i> Main St. Farmington, CA 123</small>
+                  </div>
+                </div>  
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-house-door-fill"></i> Menu 1
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Sub Menu 1</a></li>
+                  <li><a class="dropdown-item" href="#">Sub Menu 2</a></li>
+                  <li><a class="dropdown-item" href="#">Sub Menu 3</a></li>
+                  
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Menu 2</a>
+                <a class="nav-link" href="#"><i class="bi bi-database-fill-gear"></i> Menu 2</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Menu 3</a>
+                <a class="nav-link" href="#"><i class="bi bi-people-fill"></i> Menu 3</a>
               </li>
+              <li class="nav-item d-block d-lg-none"><a class="nav-link" href="#"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
             </ul>            
           </div>
             
@@ -44,15 +69,51 @@
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </div>
-            <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle profile_pic_round p-0 ms-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="profile_dropdown">
+                <a class="btn btn-secondary dropdown-toggle profile_pic_round p-0 ms-3" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                   <img src="images/profile_pic_01.jpg" alt="">
                 </a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    <ul class="" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <div class="user_details d-flex align-items-center ps-0">
+                          <div class="user_profile_pic">                        
+                            <img src="images/profile_pic_01.jpg" alt="" />
+                          </div>
+                          <div>
+                            <h5>Jhon Smith</h5>
+                            <small><i class="bi bi-geo-alt-fill"></i> Main St. Farmington, CA 123</small>
+                          </div>
+                        </div>  
+                      </li>
+                      <li>    
+                        <nav class="sidebar py-2 mb-4">
+                          <ul class="nav flex-column" id="nav_accordion">
+                            <li class="nav-item has-submenu">
+                              <a class="nav-link" href="#"> Submenu links  </a>
+                              <ul class="submenu collapse">
+                                <li><a class="nav-link" href="#">Submenu item 1 </a></li>
+                                <li><a class="nav-link" href="#">Submenu item 2 </a></li>
+                                <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
+                              </ul>
+                            </li>
+
+                            <li class="nav-item">
+                              <a class="nav-link" href="#"> Something </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#"> Logout</a>
+                            </li>
+                          </ul>
+                          </nav>    
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+
+                
               </div>
         </div>
           
@@ -635,7 +696,40 @@
           }
         }
         resetMenu()
-          
+         
+        
+        document.addEventListener("DOMContentLoaded", function(){
+
+        document.querySelectorAll('.sidebar .nav-link').forEach(function(element){
+
+  element.addEventListener('click', function (e) {
+
+    let nextEl = element.nextElementSibling;
+    let parentEl  = element.parentElement;	
+
+    if(nextEl) {
+      e.preventDefault();	
+      let mycollapse = new bootstrap.Collapse(nextEl);
+
+        if(nextEl.classList.contains('show')){
+          mycollapse.hide();
+        } else {
+          mycollapse.show();
+          // find other submenus with class=show
+          var opened_submenu = parentEl.parentElement.querySelector('.submenu.show');
+          // if it exists, then close all of them
+        if(opened_submenu){
+          new bootstrap.Collapse(opened_submenu);
+        }
+
+        }
+      }
+
+  });
+})
+
+}); 
+
       
       
     </script>
