@@ -9,7 +9,7 @@ body{font-size: 12px;}
 .navbar.bg-dark .navbar-nav .nav-item{margin:0px 30px;}
 
 .notification_icon{height: 32px;}
-.notification_icon a{margin-top:4px;}
+.notification_icon a{margin-top:5px; font-size: 18px;}
 .notification_icon a:after{display: none;}
 
 .my-account-titlebar{padding:15px 0px;}
